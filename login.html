@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Login Page</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/all.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand fs-3 ms-3 fw-bold web_tittle" href="index.html">Online Shopping</a>
+                    <ul class="navbar-nav fs-5" id="show_befor_login">
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="login.html">LogIn</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="register.html">Register</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav fs-5" id="show_after_login">
+                        <li class="nav-item fs-3 text-light text-uppercase fw-bold me-5" id="user_info"></li>
+                        <li class="nav-item me-5 shop_cart d-flex">
+                            <i class="fa-solid fa-cart-shopping d-block fs-3 mt-2 text-light"></i>
+                            <span id="cart_count" class="mt-3 text-light"></span>
+                            <a class="nav-link d-block" href="#" id="cart_data">Cart</a>
+                            <div id="cart_products" class="bg-light text-dark p-1 position-absolute">
+                                <div></div>
+                                <a href="myproducts.html" class="text-primary nav-link fs-5 fw-bold mt-3 ">View All Products</a>
+                            </div>
+                        </li>
+                        <li class="nav-item mx-3" id="logout">
+                            <a class="nav-link" href="#">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>  
+        </header>
+        <!-- /////////////////////////////////////////// -->
+        <main>
+            <form class="m-5 p-5 log_in">
+                <div class="mb-s mt-s">
+                    <label for="email" class="form-label fs-4 fw-bold">Email Address</label>
+                    <input type="email" name="email" id="email" class="form-control">
+                    <p class="fs-5 fw-bold">If you do not have an account, You must register <a href="register.html">from here.</a></p>
+                </div>
+                <div class="mb-s">
+                    <label for="pwd" class="form-label fs-4 fw-bold">Password</label>
+                    <input type="password" name="pswd" id="pwd" class="form-control">
+                </div>
+                <div class="form-check mb-3">
+                    <label class="form-check-label fs-4 fw-bold">
+                        <input type="checkbox" name="remember" class="form-check-label"> Remember Me
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary fs-5 fw-bold" id="log_in" value="Login">Submit</button>
+            </form>
+        </main>
+        
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/login.js"></script>
+        <script src="./js/user.js"></script>
+    </body>
+</html>
